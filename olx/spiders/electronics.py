@@ -5,9 +5,12 @@ from scrapy.linkextractors import LinkExtractor
 from olx.items import OlxItem
 
 
+
 class ElectronicsSpider(CrawlSpider):
     name = "electronics"
+
     allowed_domains = ["www.olx.com.pk"]
+    
     start_urls = [
         'https://www.olx.com.pk/computers-accessories/',
         'https://www.olx.com.pk/tv-video-audio/',
